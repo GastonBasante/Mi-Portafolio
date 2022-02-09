@@ -1,0 +1,657 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.padre{
+    display: flex;
+    flex-flow: column wrap;
+}
+body{
+    height: auto;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    flex-flow: column wrap;
+}
+header{
+    width: 100%;
+    height: 400px;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    align-content: center;
+    justify-content: space-evenly;
+    background: linear-gradient(90deg, #2C3E50 0%, #4CA1AF 100%);
+}
+
+.btnVerde:hover{
+    background-color: #23da6f;
+
+}
+.logo img{
+    width: 450px;
+    height: auto;
+    margin-top:140px;
+    z-index: 10;
+    position: relative;
+    
+}
+.avatar img{
+    padding: 0px;
+    margin: 0px;
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    height: 250px;
+}
+.estiloSkew {
+    background: linear-gradient(90deg, #2C3E50 0%, #4CA1AF 100%);
+    clip-path: polygon(0 0, 100% 100%, 100% 0);
+    height: 121px;
+    
+
+}
+
+.textos-header{
+    width: 50%;
+}
+.textos-header h2{
+    margin: 10px 0px;
+}
+
+.botones {
+    
+    color: #fff;
+font-family: 'Roboto', sans-serif;
+    border-radius: 4px;
+    border:none;
+    font-size: 15px;
+    padding: 8px 4px;
+    margin: 5px  3px;
+    text-align: center;
+    text-decoration: none;
+
+    
+}
+.espacio{
+    height: 20px;
+}
+
+.btnVioleta{
+
+    background-color: #5C258D;
+    border:solid 1px #5C258D;
+}
+.btnVerde{
+    background-color: #27AE60;
+    border:solid 1px #27AE60;
+}
+.btnVioleta:hover{
+    background-color: #8636cc;
+}
+
+h1,a,h2{
+    font-size: 30px;
+    font-family: 'Raleway', sans-serif;
+    color: #FFF;
+   
+}
+
+p,span{
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    color: #FFF;
+}
+
+/* Proyectos */
+.sobreMi{
+    width: 100%;
+    display: flex;
+    align-self: center;
+    flex-flow: column wrap;
+    align-items: center;
+
+
+}
+.sobreMi img{
+    width: 300px;
+    height: auto;
+    }
+.presentacion{
+    padding: 20px;
+    border-radius: 20px;
+    background-color: #27AE60;
+    height: 400px;
+    width: 80%;
+    text-align: center;
+
+}
+
+.proyectos{
+    display: flex;
+    align-self: center;
+    flex-flow: column wrap;
+    justify-content: center;
+    bottom:200px;
+    width: 70%;
+    border-radius: 60px;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+    background-color: white;
+    text-align: center;
+    overflow:hiddsen;
+    z-index: 10;
+    position: relative;
+}
+.galeria-principal{
+    display: flex;
+    flex-wrap: wrap;
+    align-self: center;
+    padding-bottom: 30px;
+    justify-content: center;
+}
+
+.proyectos h1{
+    padding: 10px;
+    color: #27AE60;
+
+}
+
+.galeria-principal{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+.galeria{
+    width: 100%;
+    display: flex;  
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  .contenedor figure{
+      position: relative;
+      height: 250px;
+      width: 300px;
+      margin: 8px;
+      overflow: hidden;
+      border-radius: 20px;
+      box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.50);
+      cursor: pointer;
+  }
+  .contenedor figure img{
+      width: 100%;
+      height: 100%;
+      transition: all 500ms ease-in-out;
+  }
+  .contenedor figure .capa{
+      position: absolute;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(34, 38, 39, 0.7);
+      transition: all 500ms ease-in-out;
+      opacity: 0;
+      visibility: hidden;
+      text-align: center;
+  
+  }
+  .contenedor span{
+      color: black;
+  }
+  
+  
+  
+  .contenedor figure .capa button{
+  color: #000;
+  border:none;
+  padding: 4px 4px;
+  text-decoration: none;
+  background: #fff;
+  border-radius: 4px;
+  font-size: 15px;
+  margin-bottom: 120px;
+  transition: all 500ms ease-in-out;
+  margin-top: 20px;
+  }
+  .contenedor figure .capa p{
+      color: #fff;
+     font-size: 10px;
+     line-height: 1.5;
+     width: 100%;
+     max-width: 220px;
+     margin:auto
+      }
+  
+  .contenedor figure:hover > .capa{
+  opacity: 1;
+  visibility: visible;
+  }
+  .contenedor figure:hover > .capa button{
+      margin-top: 70px;
+      margin-bottom: 15px;
+  
+  }
+  .contenedor figure:hover > img{
+      transform: scale(1.3);
+  }
+  
+  .lenguajes{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-flow: row wrap;
+  }
+  
+  .programacion{
+      padding: 5px;
+      margin: 4px;
+      background: rgba(0, 0, 0, 1);
+      border-radius: 4px;
+  
+  
+  }
+  
+
+/* Mis Habilidades */
+.habilidades{
+    width: 100%;
+    display: flex;
+    align-self: center;
+    flex-flow: column wrap;
+    padding: 60px 0px;
+
+    
+}
+.contenido-habilidades{
+    display: flex;
+    width: auto;
+    height: auto;
+    flex-wrap: wrap;
+    align-self: center;
+    justify-content: center;
+    padding-bottom: 100px;
+
+}
+.skills{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 120px;
+    width: 120px;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+    background-color: #27AE60;
+    border-radius: 20px;
+     margin: 15px 15px;
+}
+
+.skills:hover{
+    background: #35e27d; 
+    
+}
+
+.habilidades h1{
+    margin-bottom: 20px;
+    text-align: center;
+    color: #27AE60;
+}
+
+
+/* Conoceme */
+
+.contactame{
+    opacity: 0;
+    transition: all 1.5s;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    align-content: center;
+    justify-content: space-evenly;
+}
+.contenedor-contactame{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 60%;
+    height: 230px;
+    background: linear-gradient(90deg, #5C258D 0%, #4389A2 100%);
+    border-radius: 30px;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+    position: relative;
+    z-index: 10;
+    top: 100px;
+}
+
+
+
+.texto-contactame h1{
+
+    font-size: 20px;
+    }
+    
+
+
+.texto-contactame p{
+    margin: 10px 0px;
+    font-size: 18px; 
+}
+/* Footer */
+footer{
+    background: #000;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+    height: 450px;
+    background: linear-gradient(90deg, #2C3E50 0%, #4CA1AF 100%);
+    
+}
+.redes-sociales{
+    
+    border-radius: 50px;
+    box-shadow: 4px 5px 6px rgba(0, 0, 0, 0.3);
+    background-color: #E5E5E5;
+    padding: 10px;
+}
+.redes-sociales a{
+    width: 60px;
+    height: 60px;
+    padding: 10px;
+
+}
+
+
+.data h2{
+    color: #fff;
+    margin-bottom: 8px;
+    font-size: 20px;
+    text-align: center;
+}
+
+/* Carteles de aviso */
+
+  .center {
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+  }
+  .popup {
+    width:320px;
+    height:280px;
+    padding:30px 20px;
+    background:#f5f5f5;
+    border-radius:10px;
+    box-sizing:border-box;
+    z-index:2;
+    text-align:center;
+    opacity:0;
+    top:-200%;
+    transform:translate(-50%,-50%) scale(0.5);
+    transition: opacity 300ms ease-in-out,
+                top 1000ms ease-in-out,
+                transform 1000ms ease-in-out;
+  }
+  .popup.active {
+    opacity:1;
+    top:50%;
+    transform:translate(-50%,-50%) scale(1);
+    transition: transform 300ms cubic-bezier(0.18,0.89,0.43,1.19);
+  }
+  .popup .icon {
+    margin:5px 0px;
+    width:50px;
+    height:50px;
+    border:2px solid #f80000;
+    text-align:center;
+    display:inline-block;
+    border-radius:50%;
+    line-height:60px;
+  } 
+  .popup .title {
+    margin:5px 0px;
+    font-size:30px;
+    font-weight:600;
+  }
+  .popup .description {
+    color:#222;
+    font-size:15px;
+    padding:5px;
+  }
+  .popup .dismiss-btn {
+    margin-top:15px;
+  }
+  .popup .dismiss-btn button {
+    padding:10px 20px;
+    background:#111;
+    color:#f5f5f5;
+    border:2px solid #111;
+    font-size:16px;
+    font-weight:600;
+    outline:none;
+    border-radius:10px;
+    cursor:pointer;
+    transition: all 300ms ease-in-out;
+  }
+  .popup .dismiss-btn button:hover {
+    color:#111;
+    background:#f5f5f5;
+  }
+  .popup > div {
+    position:relative;
+    top:10px;
+    opacity:0;
+  }
+  .popup.active > div {
+    top:0px;
+    opacity:1;
+  }
+  .popup.active .icon {
+    transition: all 300ms ease-in-out 250ms;
+  }
+  .popup.active .title {
+    transition: all 300ms ease-in-out 300ms;
+  }
+  .popup.active .description {
+    transition: all 300ms ease-in-out 350ms;
+  }
+  .popup.active .dismiss-btn {
+    transition: all 300ms ease-in-out 400ms;
+  }
+
+@media screen and (max-width: 1440px){
+
+    .perfil img{
+        width: 200px;
+        height: auto;
+     }
+
+.textos-header h2, .habilidades h1{
+    font-size: 30px;
+
+}
+.textos-header p{
+    font-size: 15px;
+}
+.textos-header{
+    width:30%
+}
+
+
+.img-contactame img{
+    width: 150px;
+    height: auto;
+}
+.contenedor-contactame{
+    width: 70%;
+}
+
+.proyectos{
+    bottom:150px;
+}
+
+}
+
+
+@media screen and (max-width: 1024px){
+.perfil img{
+    width: 150px;
+}
+
+.logo img{
+        width: 350px;
+        height: auto;
+}
+
+.contenedor-contactame img{
+    width: 125px;
+    height: auto;
+}
+.texto-contactame{
+    width: 60%;
+}
+
+.presentacion h2,.proyectos h1{
+    font-size: 30px;
+}
+.presentacion p{
+    font-size: 16px;
+}
+.img-work img{
+    height: 140px;
+    width: auto;
+}
+
+.sobreMi img{
+    width: 250px;
+    height: auto;
+    }
+.botones{
+    font-size: 10px;
+}
+}
+
+/* movil */
+@media screen and (max-width: 742px){
+    header{
+        text-align: center;
+        height: auto;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .contenedor span{
+        font-size: 15px;
+    }
+    .contenedor figure{
+        width: 200px;
+        height: 150px;
+    }
+    .contenedor figure .capa h3{
+        font-size: 15px;
+    }
+ #open-popup-btn, #open-popup-btn2 ,#open-popup-btn3{
+        font-size: 10px;
+    }
+    .contenedor figure .capa p{
+        font-size: 8px;
+    }
+    .contenedor figure:hover > .capa button{
+        margin-top: 40px;
+        margin-bottom: 15px;
+    
+    }
+    .textos-header h2,.habilidades h1{
+        font-size: 23px;
+    
+    }
+    .textos-header{
+        width: 80%;
+    }
+    .perfil img{
+        width: 200px;
+    }
+    .logo img{
+        margin:50px 0px;
+        height: auto;
+}
+    .redes-sociales img{
+        width:30px;
+    }
+    .contenido-habilidades{
+        width: 80%;
+    }
+    .skills:hover{
+        background: #27AE60; 
+        
+    }
+    .presentacion p{
+        font-size: 15px;
+    }
+    .presentacion h2,.proyectos h1{
+        font-size: 20px;
+    }
+    .proyectos{
+        bottom:100px;
+    }
+    .galeria-principal{
+        width: 50%;
+    }
+    .img-work img{
+        height: 150px;
+        width: auto;
+    }
+
+    .textos-work span{
+        font-size: 15px;
+    }
+
+
+    .contenedor-contactame{
+        width: 85%;
+        text-align: center;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .texto-contactame p{
+        font-size: 12px;
+    }
+    .texto-contactame h1{
+        font-size: 15px;
+    }
+    .contenedor-contactame img{
+        width: 100px;
+        height: auto;
+    }
+}
+@media screen and (max-width: 375px){
+    .contenido-habilidades{
+        width: 100%;
+    }
+    .contenedor figure{
+        width: 175px;
+        height: 125px;
+    }
+    .contenedor figure:hover > .capa button{
+        margin-top: 20px;
+        margin-bottom: 15px;
+    
+    }
+    .logo img{
+        width: 300px;
+        height: auto;
+}
+    .presentacion h2,.proyectos h1{
+        font-size: 20px;
+    }
+    .presentacion p{
+        font-size: 13px;
+    }
+
+    .sobreMi img{
+        width: 200px;
+        height: auto;
+    }
+
+ }
